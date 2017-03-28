@@ -1,9 +1,0 @@
-E:\Projects\gps-parser\Socket\bin\Release\GPSParser.exe.config
-E:\Projects\gps-parser\Socket\bin\Release\GPSParser.exe
-E:\Projects\gps-parser\Socket\bin\Release\GPSParser.pdb
-E:\Projects\gps-parser\Socket\obj\Release\GPSParser.exe
-E:\Projects\gps-parser\Socket\obj\Release\GPSParser.pdb
-E:\Projects\gps-parser\Socket\obj\Release\GPS Parser.csprojResolveAssemblyReference.cache
-E:\Projects\gps-parser\GPS Listener\bin\Release\GPSParser.exe.config
-E:\Projects\gps-parser\GPS Listener\obj\Release\GPSParser.exe
-E:\Projects\gps-parser\GPS Listener\obj\Release\GPSParser.pdb

@@ -1,2 +1,0 @@
-E:\Projects\gps-parser\Socket\bin\Release\GPSListener.exe.config
-E:\Projects\gps-parser\Socket\bin\Release\GPSParser.exe.config
