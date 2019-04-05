@@ -64,11 +64,11 @@ namespace GPSParser.DBLogic
             set { _direction = value; }
         }
 
-        private System.Nullable<byte> _satellite;
-        public System.Nullable<byte> Satellite
+        private System.Nullable<byte> _satellites;
+        public System.Nullable<byte> Satellites
         {
-            get { return _satellite; }
-            set { _satellite = value; }
+            get { return _satellites; }
+            set { _satellites = value; }
         }
 
         private System.Nullable<short> _speed;

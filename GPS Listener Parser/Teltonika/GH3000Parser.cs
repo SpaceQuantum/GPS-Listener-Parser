@@ -135,7 +135,7 @@ namespace GPSParser.Teltonika
                         int satellites = Convert.ToInt32(receiveBytes.Skip(nextPacketStartAddress + gpsElementDataAddress).Take(1).ToList()[0]);
                         ShowDiagnosticInfo("Satellites: ----- " + satellites);
                         gpsElementDataAddress += 1;
-                        gpsData.Satellite = (byte)satellites;
+                        gpsData.Satellites = (byte)satellites;
                     }
 
                     if ((gpsMask & GH3000Parser.GPSmask.LocalAreaCodeAndCellID) != 0)

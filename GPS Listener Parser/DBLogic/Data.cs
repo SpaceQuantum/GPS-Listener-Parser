@@ -12,7 +12,9 @@ namespace GPSParser.DBLogic
         public void SaveGPSPositionFMXXXX(GPSdata gpsPos)
         {
             DBUtils db = new DBUtils();
-            SqlCommand sp = db.InitQuery(@" INSERT INTO GPS_Real (ModemId, [ServerTimestamp],    
+            SqlCommand sp = db.InitQuery(@" INSERT INTO GPS_Real (
+DeviceId, 
+[ServerTimestamp],    
     Long,
     Lat, 
     Altitude, 
@@ -26,14 +28,15 @@ namespace GPSParser.DBLogic
    @Direction, 
    @Satellites, 
    @Speed)");
-            sp.Parameters.AddWithValue("@ModemId", gpsPos.Direction.ToString());
-            sp.Parameters.AddWithValue("@ServerTimestamp", gpsPos.Direction.ToString());
-            sp.Parameters.AddWithValue("@Long", gpsPos.Direction.ToString());
-            sp.Parameters.AddWithValue("@Lat", gpsPos.Direction.ToString());
-            sp.Parameters.AddWithValue("@Altitude", gpsPos.Direction.ToString());
-            sp.Parameters.AddWithValue("@Direction", gpsPos.Direction.ToString());
-            sp.Parameters.AddWithValue("@Satellites", gpsPos.Direction.ToString());
-            sp.Parameters.AddWithValue("@Speed", gpsPos.Direction.ToString());
+            sp.Parameters.AddWithValue("@DeviceId", gpsPos.IMEI);
+            sp.Parameters.AddWithValue("@ServerTimestamp", DateTime.Now);
+            sp.Parameters.AddWithValue("@DeviceTimeStamp", gpsPos.Timestamp);
+            sp.Parameters.AddWithValue("@Long", gpsPos.Long);
+            sp.Parameters.AddWithValue("@Lat", gpsPos.Lat);
+            sp.Parameters.AddWithValue("@Altitude", gpsPos.Altitude);
+            sp.Parameters.AddWithValue("@Direction", gpsPos.Direction);
+            sp.Parameters.AddWithValue("@Satellites", gpsPos.Satellites);
+            sp.Parameters.AddWithValue("@Speed", gpsPos.Speed);
             db.ExecQuery(sp);
             try
             {
@@ -52,7 +55,9 @@ namespace GPSParser.DBLogic
         public void SaveGPSPositionGH3000(GPSdata gpsPos)
         {
             DBUtils db = new DBUtils();
-            SqlCommand sp = db.InitQuery(@" INSERT INTO GPS_Real (ModemId, [ServerTimestamp],    
+            SqlCommand sp = db.InitQuery(@" INSERT INTO GPS_Real (
+DeviceId, 
+[ServerTimestamp],    
     Long,
     Lat, 
     Altitude, 
@@ -66,14 +71,15 @@ namespace GPSParser.DBLogic
    @Direction, 
    @Satellites, 
    @Speed)");
-            sp.Parameters.AddWithValue("@ModemId", gpsPos.Direction.ToString());
-            sp.Parameters.AddWithValue("@ServerTimestamp", gpsPos.Direction.ToString());
-            sp.Parameters.AddWithValue("@Long", gpsPos.Direction.ToString());
-            sp.Parameters.AddWithValue("@Lat", gpsPos.Direction.ToString());
-            sp.Parameters.AddWithValue("@Altitude", gpsPos.Direction.ToString());
-            sp.Parameters.AddWithValue("@Direction", gpsPos.Direction.ToString());
-            sp.Parameters.AddWithValue("@Satellites", gpsPos.Direction.ToString());
-            sp.Parameters.AddWithValue("@Speed", gpsPos.Direction.ToString());
+            sp.Parameters.AddWithValue("@DeviceId", gpsPos.IMEI);
+            sp.Parameters.AddWithValue("@ServerTimestamp", DateTime.Now);
+            sp.Parameters.AddWithValue("@DeviceTimeStamp", gpsPos.Timestamp);
+            sp.Parameters.AddWithValue("@Long", gpsPos.Long);
+            sp.Parameters.AddWithValue("@Lat", gpsPos.Lat);
+            sp.Parameters.AddWithValue("@Altitude", gpsPos.Altitude);
+            sp.Parameters.AddWithValue("@Direction", gpsPos.Direction);
+            sp.Parameters.AddWithValue("@Satellites", gpsPos.Satellites);
+            sp.Parameters.AddWithValue("@Speed", gpsPos.Speed);
             db.ExecQuery(sp);
             try
             {

@@ -157,7 +157,7 @@ namespace GPSParser.Teltonika
                 gpsData.Lat = latitude;
                 gpsData.Long = longtitude;
                 gpsData.Priority = (byte)priority;
-                gpsData.Satellite = (byte)satellites;
+                gpsData.Satellites = (byte)satellites;
                 gpsData.Speed = (short)speed;
                 gpsData.Timestamp = timestamp;
                 gpsData.IMEI = IMEI.Substring(0, 15);
