@@ -1,7 +1,0 @@
-E:\Projects\gps-parser\Server Listener Tests\bin\Release\GPSTest.dll
-E:\Projects\gps-parser\Server Listener Tests\bin\Release\GPSTest.pdb
-E:\Projects\gps-parser\Server Listener Tests\bin\Release\GPSParser.exe
-E:\Projects\gps-parser\Server Listener Tests\bin\Release\GPSParser.pdb
-E:\Projects\gps-parser\Server Listener Tests\obj\Release\GPSTest.csprojResolveAssemblyReference.cache
-E:\Projects\gps-parser\Server Listener Tests\obj\Release\GPSTest.dll
-E:\Projects\gps-parser\Server Listener Tests\obj\Release\GPSTest.pdb

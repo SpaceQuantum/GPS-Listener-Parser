@@ -1,2 +1,2 @@
-# GPS-Listener-Parser
-GPS TCP Listener and parser for Teltonika Devices
+# Teltonika TCP listener and data parser
+TCP Listener and data parser for Teltonika devices

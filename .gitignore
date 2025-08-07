@@ -192,6 +192,8 @@ $RECYCLE.BIN/
 *.vc.vc.opendb
 *.vc.db
 
+.idea/*
+
 **/node_modules/*
 
 #####
